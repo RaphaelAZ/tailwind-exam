@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Tailwind</title>
     <link rel="stylesheet" href="./output.css">
+
+    <style>
+        :root {
+            --grid-seven-days: 8rem auto 1fr
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <header class="border-b-gray-200 border-b-2 bg-white">
@@ -53,8 +59,8 @@
                 <p>Max: 26°</p>
                 <p>Min: -14°</p>
             </div>
-
         </section>
+
         <section class="flex flex-row gap-3 w-full">
             <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
                 <div class="flex justify-between items-center mb-3">
@@ -100,7 +106,7 @@
                     <p class="text-xl font-semibold">1013</p>
                     <p class="text-gray-600 text-sm">hPa</p>
                     <div class="flex gap-2 items-center">
-                        <iconify-icon icon="line-md:chevron-up" class="text-gray-600 text-xl p-1 rounded-full bg-gray-100 shadow-xl font-bold text-xs max-w-fit"></iconify-icon>
+                        <iconify-icon icon="line-md:chevron-up" class="text-gray-600 p-1 rounded-full bg-gray-100 shadow-xl font-bold text-xs max-w-fit"></iconify-icon>
                         <span class="p-1 bg-green-200 text-green-500 rounded-full text-xs">Stable</span>
                     </div>
                 </div>
@@ -114,6 +120,79 @@
                 <span class="text-md text-center text-blue-800">Cliquez pour voir la carte interactive</span>
             </div>
         </section>
+
+        <div id="details" class="flex flex-row gap-x-8">
+            <section id="week-after" class="rounded-xl bg-white p-5 shadow-xl w-2/3 flex flex-col gap-y-6">
+                <h4 class="text-xl font-bold">Prévisions sur 7 jours</h4>
+
+                <div class="flex items-center justify-between">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-2">
+                        <p>Aujourd'hui</p>
+
+                        <iconify-icon class="text-amber-400" icon="solar:sun-bold"></iconify-icon>
+                        <p>Ensoleillé</p>
+                    </div>
+
+                    <div class="flex justify-center flex-row">
+                        <p>18°</p>
+                        <p>26°</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Demain</p>
+
+                    <iconify-icon icon="material-symbols:cloud"></iconify-icon>
+                    <p>Nuageux</p>
+
+                    <div>
+                        <p>15°</p>
+                        <p>23°</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Vendredi</p>
+
+                    <iconify-icon icon="f7:cloud-rain-fill"></iconify-icon>
+                    <p>Pluie</p>
+
+                    <div>
+                        <p>12°</p>
+                        <p>19°</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Samedi</p>
+
+                    <iconify-icon icon="solar:sun-bold"></iconify-icon>
+                    <p>Ensoleillé</p>
+
+                    <div>
+                        <p>16°</p>
+                        <p>24°</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Dimanche</p>
+
+                    <iconify-icon icon="material-symbols:cloud"></iconify-icon>
+                    <p>Partiellement nuageux</p>
+
+                    <div>
+                        <p>14°</p>
+                        <p>21°</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-1/3 bg-white h-52">
+
+            </section>
+        </div>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js" async defer></script>

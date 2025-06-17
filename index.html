@@ -14,7 +14,7 @@
 </head>
 <body class="bg-gray-100">
     <header class="border-b-gray-200 border-b-2 bg-white">
-        <nav class="flex flex-row border-gray-200 h-10 justify-between items-center max-w-7xl mx-auto">
+        <nav class="flex sm:flex-row border-gray-200 h-fit justify-between items-center container mx-auto p-3 sm:px-0 flex-col gap-y-3 sm:gap-y-0">
             <div class="flex items-center gap-2">
                 <iconify-icon icon="solar:sun-bold" class="p-1 rounded-md bg-linear-to-br from-blue-400 to-violet-700 text-white"></iconify-icon>
                 WeatherPro
@@ -28,36 +28,41 @@
             </div>
         </nav>
     </header>
-    <main class="max-w-7xl mx-auto flex flex-col gap-y-12 my-12">
+    <main class="container mx-auto flex flex-col md:gap-y-12 sm:gap-y-8 gap-y-6 md:my-12 sm:my-8 my-6 px-3 sm:px-0">
 
         <!-- Banner -->
-        <section id="banner" class="flex items-center justify-between p-6 rounded-lg bg-linear-to-br from-blue-400 to-violet-700 text-white">
+        <section id="banner" class="sm:flex-row flex-col sm:gap-0 gap-5 flex items-center justify-between sm:p-6 p-4 rounded-lg bg-linear-to-br from-blue-400 to-violet-700 text-white">
 
             <!-- Left -->
             <div class="flex flex-col gap-y-3">
-                <h3 class="text-2xl font-bold">Paris, France</h3>
-                <p class="text-base">Mardi, 17 juin 2025</p>
+                <h3 class="sm:text-2xl text-xl font-bold">Paris, France</h3>
+                <p class="sm:text-base text-sm">Mardi, 17 juin 2025</p>
 
-                <div class="flex flex-row text-lg gap-x-5">
-                    <h4 class="row-span-2 col-span-1 text-5xl flex items-center">22°</h4>
+                <div class="flex flex-row text-lg sm:gap-x-5 gap-x-3">
+                    <h4 class="row-span-2 col-span-1 md:text-5xl sm:text-4xl text-3xl flex items-center">22°</h4>
 
                     <div>
-                        <p class="col-start-2 col-end-3 font-bold">Ensoleillé</p>
-                        <p class="col-start-2 col-end-3">Ressenti 25°</p>
+                        <p class="col-start-2 col-end-3 font-bold sm:text-base text-sm">Ensoleillé</p>
+                        <p class="col-start-2 col-end-3 sm:text-base text-sm">Ressenti 25°</p>
                     </div>
 
                 </div>
 
             </div>
 
+            <hr class="sm:hidden block h-0.5 w-full bg-white border-none" />
+
             <!-- Right -->
-            <div class="flex flex-col text-right font-light gap-y-2">
+            <div class="flex sm:flex-col flex-row justify-end font-light gap-2">
                 <iconify-icon
-                        class="text-8xl text-amber-300 font-normal"
+                        class="md:text-8xl sm:text-6xl text-6xl text-amber-300 font-normal"
                         icon="solar:sun-bold">
                 </iconify-icon>
-                <p>Max: 26°</p>
-                <p>Min: -14°</p>
+
+                <div class="text-right flex flex-col gap-y-2">
+                    <p>Max: 26°</p>
+                    <p>Min: -14°</p>
+                </div>
             </div>
         </section>
 
@@ -258,7 +263,7 @@
                         <span class="font-bold text-gray-600">07:42</span>
                     </div>
                 </div>
-                
+
             </section>
         </div>
 

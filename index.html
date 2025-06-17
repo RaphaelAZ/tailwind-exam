@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Tailwind</title>
     <link rel="stylesheet" href="./output.css">
-
-    <style>
-        :root {
-            --grid-seven-days: 6.5rem auto 1fr
-        }
-    </style>
 </head>
 <body class="bg-gray-100">
     <header class="border-b-gray-200 border-b-2 bg-white">
@@ -50,7 +44,7 @@
 
             </div>
 
-            <hr class="sm:hidden block h-0.5 w-full bg-white border-none" />
+            <hr class="sm:hidden block h-px w-full bg-blue-300 border-none" />
 
             <!-- Right -->
             <div class="flex sm:flex-col flex-row justify-end font-light gap-2">
@@ -67,8 +61,8 @@
         </section>
 
         <!-- 4 Infos Cards section -->
-        <section class="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-3 w-full">
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
+        <section class="grid md:grid-cols-4 grid-cols-2 gap-3 w-full">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Indice UV</span>
                     <iconify-icon icon="solar:sun-bold" class="text-orange-400 text-xl spinningSun" ></iconify-icon>
@@ -80,7 +74,7 @@
                 </div>
                 <span class="text-sm text-gray-500">Elevé</span>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Humidité</span>
                     <iconify-icon icon="mdi:wireless" class="text-blue-400 text-xl"></iconify-icon>
@@ -92,7 +86,7 @@
                 </div>
                 <span class="text-sm text-gray-500">Normal</span>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Humidité</span>
                     <iconify-icon icon="mdi:arrow-top" class="text-gray-400 text-xl font-bold"></iconify-icon>
@@ -103,7 +97,7 @@
                     <iconify-icon icon="solar:arrow-right-down-linear" class="text-gray-600 p-1 rounded-full bg-gray-100 shadow-xl font-bold text-sm max-w-fit"></iconify-icon>
                 </div>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Pression</span>
                     <iconify-icon icon="teenyicons:table-solid" class="text-purple-400 text-xl"></iconify-icon>
@@ -119,17 +113,16 @@
             </div>
         </section>
 
-
         <!-- Temp & Previsions -->
-        <div id="details" class="flex flex-row gap-x-8">
-            <section id="week-after" class="rounded-xl bg-white p-5 shadow-md w-2/3 flex flex-col gap-y-6 text-base">
-                <h4 class="font-bold text-lg">Prévisions sur 7 jours</h4>
+        <div id="details" class="flex lg:flex-row flex-col gap-8">
+            <section id="week-after" class="rounded-xl bg-white p-5 shadow-md lg:w-2/3 w-full flex flex-col gap-y-6 sm:text-base text-sm">
+                <h4 class="font-bold sm:text-lg text-base">Prévisions sur 7 jours</h4>
 
-                <div class="flex items-center justify-between p-6 rounded-lg bg-blue-100">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
-                        <p class="font-bold">Aujourd'hui</p>
+                <div class="flex items-center justify-between sm:p-6 p-4 rounded-lg bg-blue-100">
+                    <div class="flex flex-row sm:gap-4 gap-3 items-center">
+                        <p class="font-bold md:w-28 sm:w-24 w-20">Aujourd'hui</p>
 
-                        <iconify-icon class="text-amber-400 text-3xl spinningSun" icon="solar:sun-bold" ></iconify-icon>
+                        <iconify-icon class="text-amber-400 sm:text-3xl text-2xl spinningSun" icon="solar:sun-bold" ></iconify-icon>
                         <p class="text-gray-600">Ensoleillé</p>
                     </div>
 
@@ -139,11 +132,11 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between p-6 rounded-lg">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
-                        <p class="font-bold">Demain</p>
+                <div class="flex items-center justify-between sm:p-6 p-4 rounded-lg">
+                    <div class="flex flex-row sm:gap-4 gap-3 items-center">
+                        <p class="font-bold md:w-28 sm:w-24 w-20">Demain</p>
 
-                        <iconify-icon class="text-gray-400 text-3xl" icon="material-symbols:cloud"></iconify-icon>
+                        <iconify-icon class="text-gray-400 sm:text-3xl text-2xl" icon="material-symbols:cloud"></iconify-icon>
                         <p class="text-gray-600">Nuageux</p>
                     </div>
 
@@ -153,11 +146,11 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between p-6 rounded-lg">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
-                        <p class="font-bold">Vendredi</p>
+                <div class="flex items-center justify-between sm:p-6 p-4 rounded-lg">
+                    <div class="flex flex-row sm:gap-4 gap-3 items-center">
+                        <p class="font-bold md:w-28 sm:w-24 w-20">Vendredi</p>
 
-                        <iconify-icon class="text-blue-400 text-3xl" icon="f7:cloud-rain-fill"></iconify-icon>
+                        <iconify-icon class="text-blue-400 sm:text-3xl text-2xl" icon="f7:cloud-rain-fill"></iconify-icon>
                         <p class="text-gray-600">Pluie</p>
                     </div>
 
@@ -167,11 +160,11 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between p-6 rounded-lg ">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
-                        <p class="font-bold">Samedi</p>
+                <div class="flex items-center justify-between sm:p-6 p-4 rounded-lg">
+                    <div class="flex flex-row sm:gap-4 gap-3 items-center">
+                        <p class="font-bold md:w-28 sm:w-24 w-20">Samedi</p>
 
-                        <iconify-icon class="text-amber-400 text-3xl spinningSun" icon="solar:sun-bold"></iconify-icon>
+                        <iconify-icon class="text-amber-400 sm:text-3xl text-2xl spinningSun" icon="solar:sun-bold"></iconify-icon>
                         <p class="text-gray-600">Ensoleillé</p>
                     </div>
 
@@ -181,11 +174,11 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between p-6 rounded-lg ">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
-                        <p class="font-bold">Dimanche</p>
+                <div class="flex items-center justify-between sm:p-6 p-4 rounded-lg">
+                    <div class="flex flex-row sm:gap-4 gap-3 items-center">
+                        <p class="font-bold md:w-28 sm:w-24 w-20">Dimanche</p>
 
-                        <iconify-icon class="text-gray-400 text-3xl" icon="material-symbols:cloud"></iconify-icon>
+                        <iconify-icon class="text-gray-400 sm:text-3xl text-2xl" icon="material-symbols:cloud"></iconify-icon>
                         <p class="text-gray-600">Partiellement nuageux</p>
                     </div>
 
@@ -197,8 +190,8 @@
             </section>
 
             <!-- Adise temp infos section -->
-            <section class="w-1/3 bg-white h-full p-5 shadow-md rounded-lg">
-                <h4 class="text-xl font-bold">Température (24h)</h4>
+            <section class="lg:w-1/3 w-full bg-white h-full p-5 shadow-md rounded-lg">
+                <h4 class="font-bold sm:text-lg text-base">Température (24h)</h4>
                 <div class="flex items-end justify-around w-full mt-7">
                     <div class="w-5">
                         <div class="h-20 bg-linear-to-br from-blue-100 to-blue-200 rounded-t-md"></div>
@@ -233,7 +226,9 @@
                         <span class="text-sm text-gray-500">21h</span>
                     </div>
                 </div>
+
                 <hr class="border-1 border-gray-100 my-5" />
+
                 <div class="flex flex-col gap-3">
                     <span class="text-gray-600 font-bold">Qualité de l'air</span>
                     <div class="flex justify-between">
@@ -267,7 +262,6 @@
 
             </section>
         </div>
-
 
         <!-- Map Section -->
         <section class="flex flex-col gap-4 w-full max-h-fit bg-white shadow-md px-8 py-7 rounded-lg">

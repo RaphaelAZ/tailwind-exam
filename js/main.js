@@ -1,6 +1,5 @@
 const suns = document.querySelectorAll('.spinningSun');
-
-console.log(suns)
+const pollo = document.getElementById('sunGif');
 
 suns.forEach(sun => {
     sun.addEventListener('mouseenter', () => {
@@ -10,4 +9,10 @@ suns.forEach(sun => {
     sun.addEventListener('mouseleave', () => {
         suns.forEach(s => s.classList.remove('rotate'));
     });
-})
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'F9') {
+    pollo.classList.toggle('hidden');
+    }
+});

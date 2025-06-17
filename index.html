@@ -8,7 +8,7 @@
 
     <style>
         :root {
-            --grid-seven-days: 8rem auto 1fr
+            --grid-seven-days: 6.5rem auto 1fr
         }
     </style>
 </head>
@@ -94,7 +94,7 @@
                 <div class="flex flex-col gap-2">
                     <p class="text-xl font-semibold">12</p>
                     <p class="text-gray-600 text-sm">km/h Nord-Est</p>
-                    <iconify-icon icon="solar:arrow-right-down-linear" class="text-gray-600 text-xl p-1 rounded-full bg-gray-100 shadow-xl font-bold text-sm max-w-fit"></iconify-icon>
+                    <iconify-icon icon="solar:arrow-right-down-linear" class="text-gray-600 p-1 rounded-full bg-gray-100 shadow-xl font-bold text-sm max-w-fit"></iconify-icon>
                 </div>
             </div>
             <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
@@ -113,7 +113,7 @@
             </div>
         </section>
         <section class="flex flex-col gap-4 w-full max-h-fit bg-white shadow-md px-8 py-7 rounded-lg">
-            <span class="font-bold">Carte météo</span>
+            <span class="font-bold text-lg">Carte météo</span>
             <div class="bg-blue-200 w-full flex flex-col gap-2 items-center justify-center py-5 rounded-lg">
                 <iconify-icon icon="tdesign:location" class="text-blue-400 text-6xl font-bold"></iconify-icon>
                 <p class="text-md font-bold text-center mt-2 text-blue-800">Paris, France</p>
@@ -122,68 +122,76 @@
         </section>
 
         <div id="details" class="flex flex-row gap-x-8">
-            <section id="week-after" class="rounded-xl bg-white p-5 shadow-xl w-2/3 flex flex-col gap-y-6">
-                <h4 class="text-xl font-bold">Prévisions sur 7 jours</h4>
+            <section id="week-after" class="rounded-xl bg-white p-5 shadow-xl w-2/3 flex flex-col gap-y-6 text-base">
+                <h4 class="font-bold text-lg">Prévisions sur 7 jours</h4>
 
-                <div class="flex items-center justify-between">
-                    <div class="grid grid-cols-(--grid-seven-days) gap-2">
-                        <p>Aujourd'hui</p>
+                <div class="flex items-center justify-between p-6 rounded-lg bg-blue-100">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
+                        <p class="font-bold">Aujourd'hui</p>
 
-                        <iconify-icon class="text-amber-400" icon="solar:sun-bold"></iconify-icon>
-                        <p>Ensoleillé</p>
+                        <iconify-icon class="text-amber-400 text-3xl" icon="solar:sun-bold"></iconify-icon>
+                        <p class="text-gray-600">Ensoleillé</p>
                     </div>
 
-                    <div class="flex justify-center flex-row">
-                        <p>18°</p>
-                        <p>26°</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p>Demain</p>
-
-                    <iconify-icon icon="material-symbols:cloud"></iconify-icon>
-                    <p>Nuageux</p>
-
-                    <div>
-                        <p>15°</p>
-                        <p>23°</p>
+                    <div class="flex items-center flex-row gap-x-3">
+                        <p class="text-sm text-gray-600">18°</p>
+                        <p class="font-bold">26°</p>
                     </div>
                 </div>
 
-                <div>
-                    <p>Vendredi</p>
+                <div class="flex items-center justify-between p-6 rounded-lg">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
+                        <p class="font-bold">Demain</p>
 
-                    <iconify-icon icon="f7:cloud-rain-fill"></iconify-icon>
-                    <p>Pluie</p>
+                        <iconify-icon class="text-gray-400 text-3xl" icon="material-symbols:cloud"></iconify-icon>
+                        <p class="text-gray-600">Nuageux</p>
+                    </div>
 
-                    <div>
-                        <p>12°</p>
-                        <p>19°</p>
+                    <div class="flex items-center flex-row gap-x-3">
+                        <p class="text-sm text-gray-600">15°</p>
+                        <p class="font-bold">23°</p>
                     </div>
                 </div>
 
-                <div>
-                    <p>Samedi</p>
+                <div class="flex items-center justify-between p-6 rounded-lg">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
+                        <p class="font-bold">Vendredi</p>
 
-                    <iconify-icon icon="solar:sun-bold"></iconify-icon>
-                    <p>Ensoleillé</p>
+                        <iconify-icon class="text-blue-400 text-3xl" icon="f7:cloud-rain-fill"></iconify-icon>
+                        <p class="text-gray-600">Pluie</p>
+                    </div>
 
-                    <div>
-                        <p>16°</p>
-                        <p>24°</p>
+                    <div class="flex items-center flex-row gap-x-3">
+                        <p class="text-sm text-gray-600">12°</p>
+                        <p class="font-bold">19°</p>
                     </div>
                 </div>
 
-                <div>
-                    <p>Dimanche</p>
+                <div class="flex items-center justify-between p-6 rounded-lg ">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
+                        <p class="font-bold">Samedi</p>
 
-                    <iconify-icon icon="material-symbols:cloud"></iconify-icon>
-                    <p>Partiellement nuageux</p>
+                        <iconify-icon class="text-amber-400 text-3xl" icon="solar:sun-bold"></iconify-icon>
+                        <p class="text-gray-600">Ensoleillé</p>
+                    </div>
 
-                    <div>
-                        <p>14°</p>
-                        <p>21°</p>
+                    <div class="flex items-center flex-row gap-x-3">
+                        <p class="text-sm text-gray-600">16°</p>
+                        <p class="font-bold">24°</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-6 rounded-lg ">
+                    <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
+                        <p class="font-bold">Dimanche</p>
+
+                        <iconify-icon class="text-gray-400 text-3xl" icon="material-symbols:cloud"></iconify-icon>
+                        <p class="text-gray-600">Partiellement nuageux</p>
+                    </div>
+
+                    <div class="flex items-center flex-row gap-x-3">
+                        <p class="text-gray-600 text-sm">14°</p>
+                        <p class="font-bold">21°</p>
                     </div>
                 </div>
             </section>

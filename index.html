@@ -16,7 +16,7 @@
     <header class="border-b-gray-200 border-b-2 bg-white">
         <nav class="flex sm:flex-row border-gray-200 h-fit justify-between items-center container mx-auto p-3 sm:px-0 flex-col gap-y-3 sm:gap-y-0">
             <div class="flex items-center gap-2">
-                <iconify-icon icon="solar:sun-bold" class="p-1 rounded-md bg-linear-to-br from-blue-400 to-violet-700 text-white"></iconify-icon>
+                <iconify-icon icon="solar:sun-bold" class="p-1 rounded-md bg-linear-to-br from-blue-400 to-violet-700 text-white spinningSun"></iconify-icon>
                 WeatherPro
             </div>
             <div class="flex flex-row gap-2 items-center">
@@ -55,7 +55,7 @@
             <!-- Right -->
             <div class="flex sm:flex-col flex-row justify-end font-light gap-2">
                 <iconify-icon
-                        class="md:text-8xl sm:text-6xl text-6xl text-amber-300 font-normal"
+                        class="md:text-8xl sm:text-6xl text-6xl text-amber-300 font-normal spinningSun"
                         icon="solar:sun-bold">
                 </iconify-icon>
 
@@ -71,7 +71,7 @@
             <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Indice UV</span>
-                    <iconify-icon icon="solar:sun-bold" class="text-orange-400 text-xl"></iconify-icon>
+                    <iconify-icon icon="solar:sun-bold" class="text-orange-400 text-xl spinningSun" ></iconify-icon>
                 </div>
                 <span class="text-xl font-semibold">7</span>
                 <div class="relative">
@@ -129,7 +129,7 @@
                     <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
                         <p class="font-bold">Aujourd'hui</p>
 
-                        <iconify-icon class="text-amber-400 text-3xl" icon="solar:sun-bold"></iconify-icon>
+                        <iconify-icon class="text-amber-400 text-3xl spinningSun" icon="solar:sun-bold" ></iconify-icon>
                         <p class="text-gray-600">Ensoleillé</p>
                     </div>
 
@@ -171,7 +171,7 @@
                     <div class="grid grid-cols-(--grid-seven-days) gap-4 items-center">
                         <p class="font-bold">Samedi</p>
 
-                        <iconify-icon class="text-amber-400 text-3xl" icon="solar:sun-bold"></iconify-icon>
+                        <iconify-icon class="text-amber-400 text-3xl spinningSun" icon="solar:sun-bold"></iconify-icon>
                         <p class="text-gray-600">Ensoleillé</p>
                     </div>
 
@@ -251,14 +251,14 @@
                     <span class="text-gray-600 font-bold">Soleil</span>
                     <div class="flex justify-between items-center">
                         <span>
-                            <iconify-icon icon="solar:sun-bold" class="text-orange-600"></iconify-icon>
+                            <iconify-icon icon="solar:sun-bold"  class="text-orange-600 spinningSun"></iconify-icon>
                             Lever
                         </span>
                         <span class="font-bold text-gray-600">07:42</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span>
-                            <iconify-icon icon="solar:sun-bold" class="text-orange-600"></iconify-icon>
+                            <iconify-icon icon="solar:sun-bold" class="text-orange-600 spinningSun"></iconify-icon>
                             Coucher
                         </span>
                         <span class="font-bold text-gray-600">07:42</span>
@@ -281,5 +281,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js" async defer></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

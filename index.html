@@ -6,11 +6,11 @@
     <title>Exam Tailwind</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <header class="border-b-gray-200 border-b-2">
-        <nav class="flex flex-row bg-white border-gray-200 h-10 justify-around items-center">
+<body class="bg-gray-100">
+    <header class="border-b-gray-200 border-b-2 bg-white">
+        <nav class="flex flex-row border-gray-200 h-10 justify-between items-center max-w-7xl mx-auto">
             <div class="flex items-center gap-2">
-                <iconify-icon icon="solar:sun-bold" class="p-1 rounded-md bg-purple-600 text-white"></iconify-icon>
+                <iconify-icon icon="solar:sun-bold" class="p-1 rounded-md bg-linear-to-br from-blue-400 to-violet-700 text-white"></iconify-icon>
                 WeatherPro
             </div>
             <div class="flex flex-row gap-2 items-center">
@@ -22,25 +22,38 @@
             </div>
         </nav>
     </header>
-    <main class="bg-gray-100 h-screen">
+    <main class="max-w-7xl mx-auto flex flex-col gap-y-12 mt-12">
+
         <!-- Banner -->
-        <section id="banner" class="flex items-center justify-between p-6 rounded-lg">
+        <section id="banner" class="flex items-center justify-between p-6 rounded-lg bg-linear-to-br from-blue-400 to-violet-700 text-white">
+
             <!-- Left -->
             <div class="flex flex-col gap-y-3">
-                <h3>Paris, France</h3>
-                <p>Mardi 17 juin 2025</p>
-                <div class="grid grid-cols-2 grid-rows-2">
-                    <h4 class="row-span-2 col-span-1">22°</h4>
-                    <p class="row-start-1 row-end-2">Ensoleillé</p>
-                    <p class="row-start-2 row-end-3">Ressenti 25°</p>
+                <h3 class="text-2xl font-bold">Paris, France</h3>
+                <p class="text-base">Mardi, 17 juin 2025</p>
+
+                <div class="flex flex-row text-lg gap-x-5">
+                    <h4 class="row-span-2 col-span-1 text-5xl flex items-center">22°</h4>
+
+                    <div>
+                        <p class="col-start-2 col-end-3 font-bold">Ensoleillé</p>
+                        <p class="col-start-2 col-end-3">Ressenti 25°</p>
+                    </div>
+
                 </div>
+
             </div>
+
             <!-- Right -->
-            <div class="flex flex-col gap-y-2">
-                <iconify-icon icon="mdi:sun"></iconify-icon>
+            <div class="flex flex-col text-right font-light gap-y-2">
+                <iconify-icon
+                        class="text-8xl text-amber-300 font-normal"
+                        icon="solar:sun-bold">
+                </iconify-icon>
                 <p>Max: 26°</p>
                 <p>Min: -14°</p>
             </div>
+
         </section>
     </main>
 

@@ -42,6 +42,57 @@
                 <p>Min: -14°</p>
             </div>
         </section>
+        <section class="flex flex-row gap-3 w-full">
+            <div class="bg-white shadow-xl p-5 py-7 rounded-xl w-full">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-gray-600 font-semibold">Indice UV</span>
+                    <iconify-icon icon="solar:sun-bold" class="text-orange-400 text-xl"></iconify-icon>
+                </div>
+                <span class="text-xl font-semibold">7</span>
+                <div class="relative">
+                    <hr class="border-3 rounded-lg text-gray-300" />
+                    <hr class="border-3 rounded-lg text-orange-400 w-2/3 absolute top-0" />
+                </div>
+                <span class="text-sm text-gray-500">Elevé</span>
+            </div>
+            <div class="bg-white shadow-xl p-5 py-7 rounded-xl w-full">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-gray-600 font-semibold">Humidité</span>
+                    <iconify-icon icon="mdi:wireless" class="text-blue-400 text-xl"></iconify-icon>
+                </div>
+                <span class="text-xl font-semibold">68%</span>
+                <div class="relative">
+                    <hr class="border-3 rounded-lg text-gray-300" />
+                    <hr class="border-3 rounded-lg text-blue-400 w-2/3 absolute top-0" />
+                </div>
+                <span class="text-sm text-gray-500">Normal</span>
+            </div>
+            <div class="bg-white shadow-xl p-5 py-7 rounded-xl w-full">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-gray-600 font-semibold">Humidité</span>
+                    <iconify-icon icon="mdi:arrow-top" class="text-gray-400 text-xl font-bold"></iconify-icon>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-xl font-semibold">12</p>
+                    <p class="text-gray-600 text-sm">km/h Nord-Est</p>
+                    <iconify-icon icon="solar:arrow-right-down-linear" class="text-gray-600 text-xl p-1 rounded-full bg-gray-100 shadow-xl font-bold text-sm max-w-fit"></iconify-icon>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl p-5 py-7 rounded-xl w-full">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-gray-600 font-semibold">Pression</span>
+                    <iconify-icon icon="teenyicons:table-solid" class="text-purple-400 text-xl"></iconify-icon>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-xl font-semibold">1013</p>
+                    <p class="text-gray-600 text-sm">hPa</p>
+                    <div class="flex gap-2 items-center">
+                        <iconify-icon icon="line-md:chevron-up" class="text-gray-600 text-xl p-1 rounded-full bg-gray-100 shadow-xl font-bold text-xs max-w-fit"></iconify-icon>
+                        <span class="p-1 bg-green-200 text-green-500 rounded-full text-xs">Stable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js" async defer></script>

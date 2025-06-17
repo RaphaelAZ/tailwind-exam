@@ -23,7 +23,25 @@
         </nav>
     </header>
     <main class="bg-gray-100 h-screen">
-        <h1>Tailwind du seigneur</h1>
+        <!-- Banner -->
+        <section id="banner" class="flex items-center justify-between p-6 rounded-lg">
+            <!-- Left -->
+            <div class="flex flex-col gap-y-3">
+                <h3>Paris, France</h3>
+                <p>Mardi 17 juin 2025</p>
+                <div class="grid grid-cols-2 grid-rows-2">
+                    <h4 class="row-span-2 col-span-1">22°</h4>
+                    <p class="row-start-1 row-end-2">Ensoleillé</p>
+                    <p class="row-start-2 row-end-3">Ressenti 25°</p>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col gap-y-2">
+                <iconify-icon icon="mdi:sun"></iconify-icon>
+                <p>Max: 26°</p>
+                <p>Min: -14°</p>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js" async defer></script>

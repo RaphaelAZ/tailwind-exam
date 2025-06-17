@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss -i ./style.css -o ./output.css --watch"
+    "build-css": "tailwindcss -i ./styles/style.css -o ./output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",

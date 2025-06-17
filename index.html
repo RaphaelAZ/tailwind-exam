@@ -62,8 +62,8 @@
         </section>
 
         <!-- 4 Infos Cards section -->
-        <section class="flex flex-row gap-3 w-full">
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
+        <section class="flex flex-row flex-wrap lg:flex-nowrap justify-center gap-3 w-full">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Indice UV</span>
                     <iconify-icon icon="solar:sun-bold" class="text-orange-400 text-xl"></iconify-icon>
@@ -75,7 +75,7 @@
                 </div>
                 <span class="text-sm text-gray-500">Elevé</span>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Humidité</span>
                     <iconify-icon icon="mdi:wireless" class="text-blue-400 text-xl"></iconify-icon>
@@ -87,7 +87,7 @@
                 </div>
                 <span class="text-sm text-gray-500">Normal</span>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Humidité</span>
                     <iconify-icon icon="mdi:arrow-top" class="text-gray-400 text-xl font-bold"></iconify-icon>
@@ -98,7 +98,7 @@
                     <iconify-icon icon="solar:arrow-right-down-linear" class="text-gray-600 p-1 rounded-full bg-gray-100 shadow-xl font-bold text-sm max-w-fit"></iconify-icon>
                 </div>
             </div>
-            <div class="bg-white shadow-md p-5 py-7 rounded-xl w-full">
+            <div class="bg-white shadow-md p-5 py-7 rounded-xl lg:w-full w-2/5">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-gray-600 font-semibold">Pression</span>
                     <iconify-icon icon="teenyicons:table-solid" class="text-purple-400 text-xl"></iconify-icon>
@@ -191,6 +191,7 @@
                 </div>
             </section>
 
+            <!-- Adise temp infos section -->
             <section class="w-1/3 bg-white h-full p-5 shadow-md rounded-lg">
                 <h4 class="text-xl font-bold">Température (24h)</h4>
                 <div class="flex items-end justify-around w-full mt-7">
